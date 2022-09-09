@@ -17,7 +17,8 @@ In this project, you will implement a minimum heap with the distance variable in
 You will implement an algorithm to find all reachable stations given a beginning station and tank
 size. You will also implement a method to find the minimum tank size you will need in order to go
 from one station to another. 
-Implement a Heap [30 points]
+
+Part 1: Implement a Heap
 Complete Heap by implementing the following methods, you can add methods if needed:
 • void buildHeap(ArrayList<GasStaiony> stations)
 Given an ArrayList of GasStations, build a minimum heap in O(n) time based on each
@@ -33,8 +34,8 @@ Delete the GasStation at a given index in O(log(n)) time.
 • void changeKey(GasStation c, double newCost)
 Updates a GasStation and rebalances the Heap in O(log(n)) time. (HINT: Try to be more
 efficient than scanning the entire heap every time you want to update a GasStation.)
-Programming Assignment #2: March 30th, 2022 11:59 PM 3
-Part 3: Finding All Reachable Gas Stations [25 points]
+
+Part 2: Finding All Reachable Gas Stations [25 points]
 Implement an algorithm to find the all reachable gas stations in the map (including the start gas
 station itself) given an initial tak size. You will be heavily penalized for a non-polynomial time (in
 terms of the number of stations) algorithm. The specific inputs provided and outputs expected are
@@ -47,7 +48,8 @@ Output:
 can get to from GasStation start.
 Method Signature:
 • ArrayList<GasStation> findAllReachableStations(GasStation start,int init size);
-Part 4: Finding Minimum Tank Size [25 points]
+
+Part 3: Finding Minimum Tank Size [25 points]
 Implement an algorithm to find the smallest tank size needed to get from a start gas station to an
 end gas station.
 Input(s):
