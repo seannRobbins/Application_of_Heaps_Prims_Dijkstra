@@ -3,10 +3,6 @@
  * EID: xxxxx
  */
 
-// Implement your heap here
-// Methods may be added to this file, but don't remove anything
-// Include this file in your final submission
-
 import java.util.ArrayList;
 
 public class Heap {

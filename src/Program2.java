@@ -1,11 +1,7 @@
 /*
- * Name: <your name>
- * EID: <your EID>
+ * Name: Seann Robbins  
+ * EID: xxxxx
  */
-
-// Implement your algorithms here
-// Methods may be added to this file, but don't remove anything
-// Include this file in your final submission
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -54,31 +50,6 @@ public class Program2 {
             return dest.getDistance();
         }
     }
-
-//    /**
-//     * Adjusts the distances of all gas stations in respect to the station current
-//     * if distance from current to next is smaller than next's distance value
-//     * 1. change nexts parent to current
-//     * 2. change nexts distance to the distance between it and current
-//     * @param current
-//     *
-//     * O(n)
-//     *
-//     */
-//    private void adjustDistance(GasStation current){
-//        for (int i = 0; i < stations.size(); i++){
-//            if (!stations.get(i).equals(current)){
-//                double distance = returnDis(current, stations.get(i));
-//                if (distance < stations.get(i).getDistance()){
-//                    if (minHeap.contains(stations.get(i))) {
-//                        minHeap.changeKey(stations.get(i), distance);
-//                        stations.get(i).setParent(current);
-//                    }
-//                }
-//            }
-//        }
-//    }
-
 
     private ArrayList<GasStation> getStations(){
         ArrayList<GasStation> list = new ArrayList<>();
@@ -212,24 +183,3 @@ public class Program2 {
         stations = x;
     }
 }
-
-
-/*
-Problem 3 first try
-ArrayList<GasStation> Reachable = new ArrayList<>(); //return array of stations
-        start.setDistance(0);
-        createDistances1(start); //create all distances from start O(n)
-minHeap.buildHeap(stations); //build a heap O(nlogn)
-//      minHeap.insertNode(start); //put start in the heap O(logn)
-        GasStation g; //temp var
-        for (int i = 0; i < minHeap.size() - 1; i++){ //go through entire list of stations O(n)
-            g = minHeap.extractMin(); //get the current closest station to start O(logn)
-            if (g.getDistance() <= init_size){
-                Reachable.add(g); //add the gasStation to reachable
-            }else{ //all other stations are too far from start
-                break;
-            }
-        }
-        minHeap.clear();
-        return Reachable;
- */
